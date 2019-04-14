@@ -12,6 +12,9 @@
     "url": "https://github.com/grahamgilchrist/hotac-squad-builder/issues"
   },
   "homepage": "https://github.com/grahamgilchrist/hotac-squad-builder#readme",
+  "scripts": {
+    "deploy": "surge app/"
+  },
   "devDependencies": {
     "browserify": "16.x",
     "gulp": "3.x",
@@ -32,6 +35,7 @@
     "lodash": "4.17.x",
     "pump": "^1.0.3",
     "run-sequence": "^2.2.0",
+    "surge": "^0.20.3",
     "vinyl-source-stream": "1.x",
     "xwing-data": "1.0.x"
   },
