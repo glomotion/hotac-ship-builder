@@ -105,7 +105,10 @@ module.exports = {
                 var $button = $('<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" disabled>' + buttonText + '</button>');
                 $button.on('click', function () {
                     if (!_isUndefined(lastSelectedItem.selectedUpgradeId)) {
-                        events.trigger(lastSelectedItem.selectedUpgradeEvent, lastSelectedItem.selectedUpgradeId);
+                        events.trigger(
+                          lastSelectedItem.selectedUpgradeEvent,
+                          lastSelectedItem.selectedUpgradeId
+                        );
                     }
                     $.featherlight.close();
                 });
