@@ -6,7 +6,6 @@ var _forEach = require('lodash/forEach');
 
 var modalController = require('../controllers/modals');
 var ships = require('../models/ships');
-var shipUpgradeDetails = require('../utils/shipUpgadeDetails');
 
 module.exports = {
     renderShipView: function (pilotSkill, currentShip, currentXp) {
@@ -52,14 +51,14 @@ module.exports = {
             $item.append($img);
             $item.append('<h3>' + item.shipData.name + '</h3>');
 
-            var changeShipCost = shipUpgradeDetails.getShipUpgradeXpCost(item.id);
+            var changeShipCost = 5;
             if (currentXp >= changeShipCost) {
                 // We have enough XP to buy this item
                 $item.on('click', function () {
                     $(this).trigger('select', {
                         selectedUpgradeEvent: 'view.changeShip.changeShip',
                         selectedUpgradeId: item.id,
-                        text: item.shipData.name + ': ' + changeShipCost + 'XP'
+                        text: item.shipData.name + ': 5XP'
                     });
                 });
             } else {

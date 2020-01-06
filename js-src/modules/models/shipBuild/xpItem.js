@@ -5,7 +5,6 @@ var ships = require('../ships');
 var upgrades = require('../upgrades');
 var pilots = require('../pilots');
 var missions = require('../missions');
-var shipUpgradeDetails = require('../../utils/shipUpgadeDetails');
 
 var XpItem = function (upgradeType, data) {
     this.upgradeType = upgradeType;
@@ -14,7 +13,7 @@ var XpItem = function (upgradeType, data) {
 
 XpItem.prototype.cost = function () {
     if (this.upgradeType === itemTypes.SHIP_TYPE) {
-        return shipUpgradeDetails.getShipUpgradeXpCost(this.data.shipId) * -1;
+        return -5;
     } else if (this.upgradeType === itemTypes.STARTING_SHIP_TYPE) {
         var startingShip = ships.getById(this.data.shipId);
         return startingShip.startingXp;
