@@ -1,43 +1,43 @@
 {
-  "name": "hotac-squad-builder",
-  "version": "0.0.1",
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/grahamgilchrist/hotac-squad-builder.git"
-  },
-  "author": "Graham Gilchrist",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/grahamgilchrist/hotac-squad-builder/issues"
-  },
-  "homepage": "https://github.com/grahamgilchrist/hotac-squad-builder#readme",
-  "scripts": {
-    "deploy": "surge app/"
-  },
-  "devDependencies": {
-    "browserify": "16.x",
-    "gulp": "3.x",
-    "gulp-eslint": "3.0.x",
-    "gulp-fs-cache": "^0.1.0",
-    "gulp-json-lint": "0.1.x",
-    "gulp-markdown": "1.2.x",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "4.x",
-    "gulp-sass-lint": "1.x",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-template-store": "1.1.x",
-    "gulp-uglify": "^3.0.0",
-    "gulp-webserver": "0.9.x",
-    "gulp-yaml-validate": "1.0.x",
-    "jquery": "3.3.x",
-    "json-url": "2.3.x",
-    "lodash": "4.17.x",
-    "pump": "^1.0.3",
-    "run-sequence": "^2.2.0",
-    "surge": "^0.20.3",
-    "vinyl-source-stream": "1.x",
-    "xwing-data": "1.0.x"
-  },
-  "dependencies": {}
+    "name": "hotac-squad-builder",
+    "version": "0.0.1",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/grahamgilchrist/hotac-squad-builder.git"
+    },
+    "author": "Graham Gilchrist",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/grahamgilchrist/hotac-squad-builder/issues"
+    },
+    "homepage": "https://github.com/grahamgilchrist/hotac-squad-builder#readme",
+    "scripts": {
+        "deploy": "surge app/"
+    },
+    "devDependencies": {
+        "browserify": "16.x",
+        "gulp": "3.x",
+        "gulp-eslint": "3.0.x",
+        "gulp-fs-cache": "^0.1.0",
+        "gulp-json-lint": "0.1.x",
+        "gulp-markdown": "1.2.x",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "4.x",
+        "gulp-sass-lint": "1.x",
+        "gulp-sourcemaps": "2.6.x",
+        "gulp-template-store": "1.1.x",
+        "gulp-uglify": "^3.0.0",
+        "gulp-webserver": "0.9.x",
+        "gulp-yaml-validate": "1.0.x",
+        "jquery": "3.3.x",
+        "json-url": "2.3.x",
+        "lodash": "4.17.x",
+        "pump": "^1.0.3",
+        "run-sequence": "^2.2.0",
+        "surge": "^0.20.3",
+        "vinyl-source-stream": "1.x",
+        "xwing-data": "1.0.x"
+    },
+    "dependencies": {}
 }
